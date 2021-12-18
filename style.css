@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:ital,wght@0,500;1,700;1,900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    font-family: 'Red Hat Display', sans-serif;;
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+
+}
+h2{
+    color: white;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlight{
+    color: hsl(178, 100%, 50%);
+}
+hr{
+   border: 1px solid hsl(215, 32%, 27%);
+}
+
+/* mobile layout */
+@media  screen and (max-width:375px) {
+    .container{
+        width: 85%;
+        background-color:  hsl(216, 50%, 16%);
+        margin: 17% auto;
+        padding: 7%;
+        border-radius: 10px;
+        font-size: 13px ;
+
+    }
+    .creation{
+        display: flex;
+        align-items: center;
+    }
+    .creator{
+        color: white;
+        padding-left: 5px;
+    }
+    .creation >img{
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right:5%;
+        
+    }
+}
