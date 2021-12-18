@@ -13,15 +13,31 @@ body{
     width: 100%;
     height: auto;
     border-radius: 7px;
+    z-index: -1;
+    position: ;
 
 }
+/* .main:hover{
+   background: cyan;
+   opacity: 50%;
+   top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+} */
 h2{
     color: white;
     
 }
+h2:hover{
+    color: hsl(178, 100%, 50%);
+}
 .flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .highlight{
@@ -30,6 +46,44 @@ h2{
 hr{
    border: 1px solid hsl(215, 32%, 27%);
 }
+.right{
+    display: flex;
+    align-items: center;
+}
+.left{
+    display: flex;
+    align-items:center;
+    
+}
+ .container{
+        width: 350px;
+        background-color:  hsl(216, 50%, 16%);
+        margin: 17% auto;
+        padding: 35px;
+        border-radius: 10px;
+        font-size: 13px ;
+        
+
+    }
+    .creation{
+        display: flex;
+        align-items: center;
+    }
+    .creator{
+        color: white;
+        padding-left: 5px;
+    }
+    .creator:hover{
+        color: hsl(178, 100%, 50%);
+    }
+    .creation >img{
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right:5%;
+        
+    }
+    
 
 /* mobile layout */
 @media  screen and (max-width:375px) {
@@ -50,11 +104,6 @@ hr{
         color: white;
         padding-left: 5px;
     }
-    .creation >img{
-        height: 30px;
-        border: 1px solid white;
-        border-radius: 50%;
-        margin-right:5%;
+    
         
     }
-}
